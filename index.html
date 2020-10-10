@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Brady Carrico</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+	<ul class="tabs">
+		<!--Home/About-->
+		<li data-tab-target="#home" class="active tab">Home</li>
+		<!--Coding Projects/Music-->
+		<li data-tab-target="#projects" class="tab">Projects</li>
+		<!--Quotes, Contact, Jyanken-->
+		<li data-tab-target="#contact" class="tab">Contact</li>
+		<!-- : : -->
+		<li data-tab-target="#other" class="tab"> : : </li>
+	</ul>
+
+	<div class="tab-content">
+		<!--Home/About-->
+		<div id="home" data-tab-content class="active">
+			<h1>In the darkness of the night...</h1>
+			<p>you must have found your way to some dark corner of the interwebs.</p>
+			<p>come back when my page is finished.</p>
+		</div>
+		<!--Coding Projects/Music-->
+		<div id="projects" data-tab-content>
+			<h1>Projects</h1>
+			<p>These are the projects that I don't have</p>
+		</div>
+		<!--Quotes, Contact, Jyanken-->
+		<div id="contact" data-tab-content>
+
+			<header>
+				<h1>Contact Me</h1>
+			</header>
+
+			<div class="contact-form">
+				<form id="contact-form" method="post" action="contact-form-handler.php">
+					<input name="name" type="text" class="form-control" placeholder=" Your Name" required><br>
+					<input name="email" type="email" class="form-control" placeholder=" Your Email" required><br>
+					<textarea name="message" class="form-control" placeholder=" Message" rows="4" required></textarea><br>
+					<input type="submit" class="form-control submit" value="SEND MESSAGE">
+				</form>
+			</div>
+
+			<!--
+				If you're wondering what this is, it's a game of rock paper scissors that was originally meant to
+				challenge you for my contact info. It was deemed "not worth it."
+			
+
+			<header>
+				<h1>Rock Paper Scissors</h1>
+			</header>
+
+			<div class="scoreboard">
+				<div id="user-label" class="badge">user</div>
+				<div id="computer-label" class="badge">comp</div>
+				<span id="user-score">0</span>:<span id="computer-score">0</span>
+			</div>
+
+			<div class="result">
+				<p>Make your move.</p>
+			</div>
+
+			<div class="choices">
+				<div class="choice" id="r">
+					<img src="images/rock.png" alt="">
+				</div>
+				<div class="choice" id="p">
+					<img src="images/paper.png" alt="">
+				</div>
+				<div class="choice" id="s">
+					<img src="images/scissors.png" alt="">
+				</div>
+			</div>
+			-->
+
+		</div>
+
+		<!-- : : -->
+		<div id="other" data-tab-content>
+
+			<canvas id="canvas1"></canvas>
+			<!--In the darkness of the night,
+				Your imagination comes to life-->
+		</div>
+	
+	</div>
+	<script src="app.js" charset="utf-8" defer></script>
+	<script src="mouse-effect.js" charset="utf-8" defer></script>
+</body>
+</html>
